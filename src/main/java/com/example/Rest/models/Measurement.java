@@ -36,5 +36,13 @@ public class Measurement {
     @JoinColumn(name = "sensor", referencedColumnName = "name")
     private Sensor sensor;
 
+    public Boolean isRaining() {
+        return raining;
+    }
+
+    public void setRaining(Boolean raining) {
+        this.raining = raining;
+    }
+
 }
 
